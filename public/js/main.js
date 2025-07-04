@@ -62,3 +62,11 @@ section.visible {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+// Menu mobile
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
